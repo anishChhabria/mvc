@@ -1,1 +1,3 @@
-ABOUT
+ PAGES ABOUT
+ <?php
+// echo APPROOT;
