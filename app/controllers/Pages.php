@@ -12,6 +12,9 @@ class pages extends Controller {
     }
     public function about(){
         //echo 'returning id no'.$id;
-        $this->view('pages/about');
+        $data=[
+            'title'=>'About Us'
+        ];
+        $this->view('pages/about',$data);
     }
 }
