@@ -6,10 +6,13 @@ class pages extends Controller {
 
     }
     public function index(){
-       // $this->view('hello');
+        $post= $this->postModel->getPosts();
+        // $this->view('hello');
        $data=[
-           'title'=>'Welcome'
+           'title'=>'Welcome',
+           'posts' => $post
         ];
+        
         $this->view('pages/index',$data);
     }
     public function about(){
