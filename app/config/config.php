@@ -11,3 +11,5 @@ define('APPROOT', dirname(dirname(__FILE__)));
 define('URLROOT','http://localhost/mvc');
 // SITE root
 define('SITENAME','MVC');
+//APP version
+define('APPVERSION','1.0.0');

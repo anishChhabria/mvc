@@ -7,7 +7,8 @@ class pages extends Controller {
     public function index(){
        
        $data=[
-           'title'=>'MVC'
+           'title'=>'MVC',
+           'description'=>'simple social network built on MVC PHP FRAMEWORK'
         ];
         
         $this->view('pages/index',$data);
@@ -15,7 +16,8 @@ class pages extends Controller {
     public function about(){
         //echo 'returning id no'.$id;
         $data=[
-            'title'=>'About Us'
+            'title'=>'About Us',
+            'description'=>'App to share post with other user'
         ];
         $this->view('pages/about',$data);
     }
