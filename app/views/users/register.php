@@ -7,23 +7,23 @@
                 <form action="<?php echo URLROOT;?>/users/register" method="post">
                        <div class="form-group">
                             <label for="name">Name <sup>*</sup></label>
-                            <input type ="text" name = "Name" class ="form-control form-control-lg <?php echo(!empty($data['name_error']))?'is-invalid':''  ?>" value ="<?php echo $data['name'];?>">
-                            <span class="invalid-feedback"><?PHP echo $data['name_error'];?> </span>
+                            <input type ="text" name = "name" class ="form-control form-control-lg <?php echo(!empty($data['name_err']))?'is-invalid':''  ?>" value ="<?php echo $data['name'];?>">
+                            <span class="invalid-feedback"><?PHP echo $data['name_err'];?> </span>
                        </div>
                         <div class="form-group">
                             <label for="email">Email: <sup>*</sup></label>
-                            <input type="email" name="email" class="form-control form-control-lg <?php echo (!empty($data['email_error'])) ? 'is-invalid' : ''; ?>" value="<?php echo $data['email']; ?>">
-                            <span class="invalid-feedback"><?php echo $data['email_error']; ?></span>
+                            <input type="email" name="email" class="form-control form-control-lg <?php echo (!empty($data['email_err'])) ? 'is-invalid' : ''; ?>" value="<?php echo $data['email']; ?>">
+                            <span class="invalid-feedback"><?php echo $data['email_err']; ?></span>
                         </div>
                        <div class="form-group">
                             <label for="password">Password <sup>*</sup></label>
-                            <input type ="password" name = "password" class ="form-control form-control-lg <?php echo(!empty($data['password_error']))?'is-invalid':''  ?>" value ="<?php echo $data['password'];?>">
-                            <span class="invalid-feedback"><?PHP echo $data['password_error'];?> </span>
+                            <input type ="password" name = "password" class ="form-control form-control-lg <?php echo(!empty($data['password_err']))?'is-invalid':''  ?>" value ="<?php echo $data['password'];?>">
+                            <span class="invalid-feedback"><?PHP echo $data['password_err'];?> </span>
                        </div>
                        <div class="form-group">
                             <label for="confirm-password"> Confirm_password <sup>*</sup></label>
-                            <input type ="password" name = "Name" class ="form-control form-control-lg <?php echo(!empty($data['confirm_password_error']))?'is-invalid':''  ?>" value ="<?php echo $data['confirm_password'];?>">
-                            <span class="invalid-feedback"><?PHP echo $data['confirm_password_error'];?> </span>
+                            <input type ="password" name = "confirm_password" class ="form-control form-control-lg <?php echo(!empty($data['confirm_password_err']))?'is-invalid':''  ?>" value ="<?php echo $data['confirm_password'];?>">
+                            <span class="invalid-feedback"><?PHP echo $data['confirm_password_err'];?> </span>
                        </div>
 
 
