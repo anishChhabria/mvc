@@ -1,7 +1,10 @@
 <?php require APPROOT . '/views/inc/header.php'; ?>
+<?php flash('register_success');
+            ?>
     <div class="row">
         <div class="col-md-6 mx-auto">
             <div class="card card-body bg-light mt-5">
+            
                 <h2><b>Login</b></h2>
                 <p>Please fill out this form to <b>Login</b></p>
                 <form action="<?php echo URLROOT;?>/users/login" method="post">
@@ -20,7 +23,7 @@
 
                        <div class="row">
                             <div class="col">
-                                    <input type="submit" value="Register" class="btn btn-primary btn-block" >
+                                    <input type="submit" value="Login" class="btn btn-primary btn-block" >
                             </div>
                             <div class="col">
                                     <a href="<?php echo URLROOT;?>/users/register" class="btn-btn-light btn-block">Don't have a  Account? Register </a>
