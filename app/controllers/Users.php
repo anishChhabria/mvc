@@ -1,6 +1,7 @@
 <?php
   class Users extends Controller {
     public function __construct(){
+        $this->userModel =$this->model('User');
 
     }
 
@@ -27,6 +28,11 @@
         // Validate Email
         if(empty($data['email'])){
           $data['email_err'] = 'Please enter email';
+        }else{
+            //check email
+            if($this->userModel->findUserByEmail($data['email'])){
+                $data['email_err'] = 'This email_id is already registered';
+            }
         }
 
         // Validate Name
@@ -95,6 +101,12 @@
         // Validate Email
         if(empty($data['email'])){
           $data['email_err'] = 'Please enter email';
+        }else{
+            if($this->userModel->findUserByEmail($data['email'])){
+
+            }else{
+                $data['email_err'] = 'This Email_id is not registered with us';
+            }
         }
 
         // Validate Password

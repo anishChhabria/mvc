@@ -38,16 +38,16 @@
     }
 
     //bind values
-    public function bind($param,$type=NULL,$value){
+    public function bind($param,$value,$type=NULL){
       if(is_null($type)){
         switch(true){
-          case is_int(value) :
+          case is_int($value) :
           $type =PDO::PARAM_INT;
           break;
-          case is_bool(value) :
+          case is_bool($value) :
           $type =PDO::PARAM_BOOL;
           break;
-          case is_null(value) :
+          case is_null($value) :
           $type =PDO::PARAM_NULL;
           break;
           default :
