@@ -1,10 +1,10 @@
 <?php require APPROOT . '/views/inc/header.php'; ?>
-<?php flash('register_success');
-            ?>
+
     <div class="row">
         <div class="col-md-6 mx-auto">
             <div class="card card-body bg-light mt-5">
-            
+                <?php flash('register_success');
+                ?>
                 <h2><b>Login</b></h2>
                 <p>Please fill out this form to <b>Login</b></p>
                 <form action="<?php echo URLROOT;?>/users/login" method="post">
