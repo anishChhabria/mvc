@@ -5,6 +5,10 @@ class pages extends Controller {
 
     }
     public function index(){
+        //if logged in the home == post pg
+        if(isLoggedIn($_SESSION['user_id'])){
+            redirect('posts');
+          }
        
        $data=[
            'title'=>'MVC',

@@ -12,4 +12,4 @@ define('URLROOT','http://localhost/mvc');
 // SITE root
 define('SITENAME','MVC');
 //APP version
-define('APPVERSION','1.0.0');
+define('APPVERSION','1.3.7');

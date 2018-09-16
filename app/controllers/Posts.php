@@ -5,13 +5,31 @@
         if(!isLoggedIn($_SESSION['user_id'])){
         redirect('users/login');
       }
+
+      $this->postModel = $this->model('Post');
     }
 
     public function index(){
-      $data = [];
+        // get post
+        $posts = $this->postModel->getPosts();
+      
+        $data = [
+            'posts'=> $posts
+        ];
 
       $this->view('posts/index', $data);
     
+    }
+    public function add(){
+        $data = [
+            'title'=>'',
+            'body'=>'',
+             
+        ];
+
+      $this->view('posts/add', $data);
+    
+
     }
     // //to check wether the user has logged in or not
     // public function isLoggedIn(){
