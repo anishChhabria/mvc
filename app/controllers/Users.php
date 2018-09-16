@@ -162,7 +162,7 @@
       $_SESSION['user_id']=$user->id;
       $_SESSION['user_email']=$user->email;
       $_SESSION['user_name']=$user->name;
-      redirect('pages/index');
+      redirect('posts');
     }
     // logout rfunction
     public function logout(){
@@ -172,12 +172,5 @@
       session_destroy();
       redirect('users/login');
     }
-    //to check wether the user has logged in or not
-    public function isLoggedIn(){
-      if(isset($_SESSION['user_id'])){
-        return true;
-      } else {
-        return false;
-      }
-    }
+   
   }
