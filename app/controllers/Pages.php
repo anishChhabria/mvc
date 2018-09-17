@@ -6,7 +6,7 @@ class pages extends Controller {
     }
     public function index(){
         //if logged in the home == post pg
-        if(isLoggedIn($_SESSION['user_id'])){
+        if(isLoggedIn()){
             redirect('posts');
           }
        
