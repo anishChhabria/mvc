@@ -11,7 +11,7 @@ class pages extends Controller {
           }
        
        $data=[
-           'title'=>'MVC',
+           'title'=>'VESITams',
            'description'=>'simple social network built on MVC PHP FRAMEWORK'
         ];
         

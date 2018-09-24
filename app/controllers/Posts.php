@@ -45,7 +45,7 @@
         if(empty($data['title_err']) && empty($data['body_err'])){
           // Validated
           if($this->postModel->addPost($data)){
-            flash('post_message', 'Post Added');
+            flash('post_message',' Your complain has been registered ');
             redirect('posts');
           } else {
             die('Something went wrong');

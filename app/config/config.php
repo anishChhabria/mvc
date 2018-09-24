@@ -10,6 +10,6 @@ define('APPROOT', dirname(dirname(__FILE__)));
 // URL root
 define('URLROOT','http://localhost/mvc');
 // SITE root
-define('SITENAME','MVC');
+define('SITENAME','VESITams');
 //APP version
 define('APPVERSION','1.3.7');
